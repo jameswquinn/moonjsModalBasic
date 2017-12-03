@@ -1,9 +1,5 @@
-//componet
 Moon.component("popup", {
     template: `<div><button m-on:click="popup">Popup</button></div>`,
-    data: {
-        msg: "Hello Moon!"
-    },
     methods: {
 
         popup: function() {
@@ -21,7 +17,6 @@ Moon.component("popup", {
         }
     }
 });
-//app
 const app = new Moon({
     el: "#app"
 });
