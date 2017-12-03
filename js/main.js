@@ -3,7 +3,7 @@ Moon.component("modal", {
     methods: {
 
         popup: function() {
-          var url = 'https://www.maybelline.com/~/media/mny/us/eye-makeup/eye-shadow/the-rock-nudes-palette/modules/featuredproductwide/maybelline-eyeshadow-rocknudes-beauty-look-16x9.jpg';
+          var url = app.get("img");
             var popup = {
                 body: '<figure><img class="lazyload" data-src="' + url + '" /><figcaption><blockquote><p><em>Yeah!! Milligram is amazing.</em></p></blockquote><p><em>Yeah!! Milligram is amazing.</em></p></figcaption></figure>',
                 buttons: {
@@ -20,5 +20,8 @@ Moon.component("modal", {
 });
 const app = new Moon({
     el: "#app",
+    data: {
+  img: "https://www.maybelline.com/~/media/mny/us/eye-makeup/eye-shadow/the-rock-nudes-palette/modules/featuredproductwide/maybelline-eyeshadow-rocknudes-beauty-look-16x9.jpg",
+},
     template: '<modal></modal>'
 });
