@@ -1,4 +1,4 @@
-Moon.component("popup", {
+Moon.component("modal", {
     template: `<div><button m-on:click="popup">Popup</button></div>`,
     methods: {
 
@@ -18,5 +18,6 @@ Moon.component("popup", {
     }
 });
 const app = new Moon({
-    el: "#app"
+    el: "#app",
+    template: '<modal></modal>'
 });
